@@ -1,0 +1,21 @@
+{
+  "name": "playwright-saucedemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tests:chrome": "npx playwright test --config=playwright.config.ts --project=Chromium",
+    "tests:firefox": "npx playwright test --config=playwright.config.ts --project=Firefox",
+    "tests:webkit": "npx playwright test --config=playwright.config.ts --project=Webkit",
+    "tests:chrome:report": "npx playwright test --config=playwright.config.ts --project=Chromium --reporter=html",
+    "tests:firefox:report": "npx playwright test --config=playwright.config.ts --project=Firefox --reporter=html",
+    "tests:webkit:report": "npx playwright test --config=playwright.config.ts --project=Webkit --reporter=html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@playwright/test": "^1.54.1",
+    "prettier": "^3.6.2"
+  }
+}
